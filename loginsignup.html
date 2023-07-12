@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <title> Heavenly Pleasure - Login and Signup </title>
+    <link rel = "icon" type = "image/x-icon" href = "image/Unofficial Logo.png">
+
+    <link rel = "stylesheet" href = "loginsignup.css">
+    <link rel="preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity = "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin = "anonymous" referrerpolicy = "no-referrer"/>
+
+</head>
+
+<body>
+  
+    <section class = "wrapper">
+
+        <div class = "form signup">
+
+            <header> Signup </header>
+
+            <form action = "#">
+
+                <input type = "text" placeholder = "Full Name" required/>
+                <input type = "email" placeholder = "Email Address" required/>
+                <input type = "password" placeholder = "Password" required/>
+                <input type = "age" placeholder = "Age" required/>
+
+                <div class = "checkbox">
+
+                    <input type = "checkbox" id = "signupCheck" />
+                    <label for = "signupCheck"> I Accept all the <a href = "tac.html" p style = "color:rgb(162, 150, 150)"> Terms and Conditions </a> </label>
+
+                </div>
+
+                <input type = "submit" value = "Signup" onClick = "myFunction()"/>
+
+                <script>
+
+                    function myFunction(){
+
+                        window.location.href = "home.html";
+
+                    }
+
+                </script>
+
+            </form>
+
+        </div>
+
+        <div class = "form login">
+
+            <header> Login </header>
+
+            <form action = "#">
+
+                <input type = "text" placeholder = "Email Address" required/>
+                <input type = "password" placeholder = "Password" required/>
+
+                <a href = "#"> Forgot password? </a>
+
+                <input type = "submit" value = "Login" onClick = "myFunction()"/>
+
+                <script>
+
+                    function myFunction(){
+
+                        window.location.href = "home.html";
+
+                    }
+
+                </script>
+
+                <a href = "home.html"> <center> Go back to Main </center> </a> <br>
+
+                </p> <center> © All Rights Reserved 2023 <p> </center>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () => {
+
+            wrapper.classList.add("active");
+
+        });
+
+        signupHeader.addEventListener("click", () => {
+
+            wrapper.classList.remove("active");
+
+        });
+
+    </script>
+
+</body>
+</html>
