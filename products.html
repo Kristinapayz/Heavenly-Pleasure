@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+    <title> Heavenly Pleasure Remake </title>
+    <link rel = "icon" type = "image/x-icon" href = "Images/Unofficial Logo.png">
+
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+
+    <link href = 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel = 'stylesheet'>
+    <link href = "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel = "stylesheet">
+
+    <script src = "https://kit.fontawesome.com/70cde9e6d1.js" crossorigin = "anonymous"> </script>
+
+</head>
+
+<body>
+
+    <header class = "header">
+
+        <input type = "checkbox" name = "" id = "toggle-menu">
+        <label for = "toggle-menu" class = "fa-solid fa-bars" id = "searchit"> </label>
+
+        <a href = "#" class = "logo"> <img src = "Images/Unofficial Logo.png"> </a>
+
+        <nav class = "navigation-bar">
+
+            <a href = "home.html"> Home </a>
+            <a href = "about.html"> About </a>
+            <a href = "products.html"> Products </a>
+            <a href = "reviews.html"> Reviews </a>
+            <a href = "contacts.html"> Contact </a>
+
+        </nav>
+
+        <div class = "header-icons">
+
+            <a href = "#" class = "active">  <span class = "quantity"> 0 </span>  <i class = 'bx bxs-cart-alt'  id = "open"> </i> </a>
+            <a href = "#"> <i class = 'bx bxs-user'> </i> </a>
+            <a href = "#"> <i class = 'bx bxs-search-alt-2' id = "open-search"> </i> </a>
+
+        </div>
+
+        <div class = "boxisearch">
+    
+            <input type = "text" placeholder = "Search Here...">
+            <i class = 'fa-solid fa-xmark' id = "close-search"> </i>
+
+        </div>
+
+    </header>
+
+    <h1 class = "shop-heading" id = "products"> Shop <span> Here </span> </h1>
+
+    <div class = "list">
+
+        
+
+    </div>
+
+
+    <div class = "cart" id = "cart">
+        
+        <h1> Cart </h1>
+
+        <ul class = "cart-list">
+
+
+
+        </ul>
+ 
+        <div class = "checkwrapper">
+
+            <div class = "checkout">
+
+                <a href = "checkout.html"> <div class = "check-out"> Checkout </div> </a>
+                <div class = "total-price"> 0 </div>
+                <div class = "close-cart"> Close </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class = "footer-container">
+
+            <div class = "footer-row">
+
+                <div class = "footer-column">
+
+                    <h4> Properties </h4>
+
+                    <ul>
+
+                        <li> <a href = "home.html"> Home </a> </li>
+                        <li> <a href = "about.html"> About </a> </li>
+                        <li> <a href = "shop.html"> Shop </a> </li>
+                        <li> <a href = "contact.html"> Contact </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div class = "footer-column">
+
+                    <h4> Products </h4>
+
+                    <ul>
+
+                        <li> <a href = "shop.html"> Condoms </a> </li>
+                        <li> <a href = "shop.html"> Sex Dolls </a> </li>
+                        <li> <a href = "shop.html"> Dildo </a> </li>
+                        <li> <a href = "shop.html"> Vibrators </a> </li>
+                        <li> <a href = "shop.html"> Fleshlights </a> </li>
+                        <li> <a href = "shop.html"> Lubricants </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div class = "footer-column">
+
+                    <h4> Services </h4>
+
+                    <ul>
+
+                        <li> <a href = "about.html#services"> Discreet Packaging </a> </li>
+                        <li> <a href = "about.html#services"> Fast Delivery </a> </li>
+                        <li> <a href = "about.html#services"> 10 Days Returns </a> </li>
+                        <li> <a href = "about.html#services"> 24/7 Support </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div class = "footer-column">
+
+                    <h4> Newsletter </h4>
+
+                    <form action = "">
+
+                        <input type = "text" placeholder = "Enter your name" class = "inputName">
+                        <input type = "email" placeholder = "Enter your email" class = "inputMail">
+                        <input type = "submit" value = "Submit" class = "inputSubmit">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class = "footer-row">
+
+                <div class = "column">
+
+                    <p> &#169; 2023 BSCS 1 - 2. Heavenly Pleasure </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type = "module" src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src = "script.js" > </script>
+
+    <script>
+
+        let sbutton = document.querySelector('#open-search');
+        let cbutton = document.querySelector('#close-search');
+        let sboxi = document.querySelector('.boxisearch');
+        let header = document.querySelector('header');
+        let navigation = document.querySelector('.navigation-bar');
+        let toggleit = document.querySelector('#toggle-menu');   
+
+        sbutton.onclick = function(){
+
+            sboxi.classList.add('active');
+            cbutton.classList.add('active');
+            sbutton.classList.add('active');
+            toggleit.classList.add('hide');
+            header.classList.remove('open');
+
+        }
+
+        cbutton.onclick = function(){
+
+            sboxi.classList.remove('active');
+            cbutton.classList.remove('active');
+            sbutton.classList.remove('active');
+            toggleit.classList.remove('hide');
+
+        }
+
+        toggleit.onclick = function(){
+
+            header.classList.toggle('open');          
+            sboxi.classList.remove('active');
+            cbutton.classList.remove('active');
+            sbutton.classList.remove('active');
+
+        }
+
+    </script>
+
+</body>
+</html>
